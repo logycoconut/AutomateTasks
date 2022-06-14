@@ -1,0 +1,13 @@
+name: 周三半价
+
+on:
+  push:
+  schedule:
+    - cron: '58 01 * * ?'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 发送推送信息
+        run: curl https://api.day.app/${{ secrets.DeviceToken }}/优惠券提醒/周三半价?url=cmblife%3A&level=timeSensitive&icon=https://android-artworks.25pp.com/fs08/2019/07/17/4/110_f554965107d75ba4ef4df36027082125_con_130x130.png&level=timeSensitive
