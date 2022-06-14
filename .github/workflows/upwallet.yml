@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: 发送推送信息
-        run: curl https://api.day.app/${{ secrets.DeviceToken }}/优惠券提醒/浙里好券?url=upwallet%3A%2F%2Fapplet%3FtoLink%3Dhttps%253A%252F%252Fzjyhjy.95516.com%252Fzlhq%252F%26encryptAppId%3D9fb3c78a9077c2e8&icon=https://yun.kjjcrm.com/kjy/media/file/20220522/20a04669eb570fdc2280ea792d9e2e06.png
+        run: curl https://api.day.app/${{ secrets.DeviceToken }}/优惠券提醒/浙里好券\?url\=upwallet%3A%2F%2Fapplet%3FtoLink%3Dhttps%253A%252F%252Fzjyhjy.95516.com%252Fzlhq%252F%26encryptAppId%3D9fb3c78a9077c2e8\&icon\=https://yun.kjjcrm.com/kjy/media/file/20220522/20a04669eb570fdc2280ea792d9e2e06.png\&level\=timeSensitive
