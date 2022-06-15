@@ -3,7 +3,7 @@ name: 浙里好券
 on:
   push:
   schedule:
-    - cron: '28 11 * * ?'
+    - cron: '26 11 * * ?'
 
 jobs:
   build:
